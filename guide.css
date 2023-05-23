@@ -1,0 +1,41 @@
+#intro_guide {
+    padding-top: 20vw;
+}
+
+#guide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+
+#guide img {
+    display: flex;
+    margin: auto;
+}
+
+
+@media (min-width: 800px) {
+    #intro_guide {
+        padding-top: 10vw;
+    }
+
+    .ikon {
+        display: flex;
+        align-items: center;
+        padding: 1vw 3vw 1vw 3vw;
+    }
+
+    .ikon p {
+        text-align: left;
+    }
+
+    #guide img {
+        width: 16vw;
+        height: 100%;
+    }
+
+
+}
+
+@media (min-width: 1280px) {}

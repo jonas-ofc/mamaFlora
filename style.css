@@ -1,0 +1,731 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background-image: linear-gradient(#85A69B, #4C6E72);
+}
+
+
+header {
+	position: fixed;
+	display: block;
+	width: 100vw;
+	height: 50px;
+	background-color: #4D7553;
+	z-index: 98;
+	font-family: Philosopher, sans-serif;
+}
+
+.logo_navn_menu {
+	display: flex;
+	text-decoration: none;
+}
+
+.logo_menu {
+	height: 46px;
+	margin-left: 1vw;
+	z-index: 99;
+}
+
+.mamaflora_menu {
+	font-family: Philosopher, sans-serif;
+	color: #CA9C2C;
+	padding: 14px;
+	top: 0;
+	font-size: 19px;
+	position: absolute;
+	justify-content: center;
+	display: flex;
+	width: 100vw;
+}
+
+#myLinks {
+	display: none;
+}
+
+.topnav {
+	display: block;
+	background-color: #4D7553;
+	height: 48px;
+}
+
+#myLinks {
+	position: absolute;
+	width: 100vw;
+	height: 200px;
+	background-color: #9AB3AF;
+}
+
+.active a {
+	text-align: center;
+	position: relative;
+	color: #EAEBE6;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 19px;
+	display: block;
+}
+
+.icon img {
+	background-color: #4D7553;
+	width: 44px;
+	height: 43px;
+}
+
+.topnav a.icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+
+/*burgermenu og animation*/
+#burgercontainer {
+	padding: 4px;
+	display: inline-block;
+	cursor: pointer;
+	padding-right: 3vw;
+}
+
+
+/*burgermenuen er lavet af 3 barer*/
+.bar1,
+.bar2,
+.bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #CA9C2C;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+nav div:first-of-type {
+	border-bottom: 2px solid #EAEBE6;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav div:nth-of-type(2) {
+	border-top: 2px solid #EAEBE6;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav div:nth-of-type(3) {
+	border-top: 2px solid #EAEBE6;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+.splash {
+	padding-top: 45px;
+	background-image: url(img/nysplash.jpg);
+	background-size: cover;
+	background-position: 30% 33%;
+	height: 38vw;
+}
+
+
+
+.logo {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.logo img {
+	width: 25vw;
+}
+
+
+
+main {
+	position: relative;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-bottom: 5vw;
+}
+
+section {}
+
+#forside_planter {
+	margin: 10px;
+	display: grid;
+	grid-gap: 10px;
+	padding-top: 50px;
+	grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+	font-family: Philosopher, sans-serif;
+	color: #EAEBE6;
+	font-size: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-family: Philosopher, sans-serif;
+	color: #CA9C2C;
+	font-size: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 16px;
+}
+
+.overskrift {
+	color: #EAEBE6;
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-family: Philosopher, sans-serif;
+	color: #EAEBE6;
+	font-size: 1.4rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+p {
+	font-family: Quattrocento, sans-serif;
+	color: #EAEBE6;
+	font-size: 1.3rem;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.7vw;
+}
+
+
+#forside_planter div {
+	width: 100%;
+	height: 25vw;
+	background-color: #9FB2AF;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
+a:first-of-type {
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+
+.plante_01 img {
+	margin-top: -30vw;
+
+
+}
+
+.plante_02 img {
+	margin-top: -50vw;
+
+}
+
+
+.plante_03 img {
+	margin-top: -50vw;
+
+}
+
+
+#forside_planter h3 {
+	color: #EAEBE6;
+	margin: 0 auto;
+	text-align: center;
+	width: 36vw;
+	font-size: 4vw;
+	border: #EAEBE6 2px solid;
+	padding: 4vw;
+	color: #EAEBE6;
+	z-index: 95;
+	position: relative;
+	margin-top: 5.5vw;
+
+
+	/*placere teksten oven på billedet*/
+}
+
+#forside_planter a {
+	text-decoration: none;
+}
+
+
+
+#forside_planter img {
+	opacity: 10%;
+	max-width: 100%;
+}
+
+
+.splash_02 {
+	background-image: url(img/splash2.jpg);
+	background-size: cover;
+	max-width: 100%;
+	height: 30vw;
+	margin: 20px 10px 20px 10px;
+	background-position: center
+}
+
+/*Teksten midt på splash2*/
+.tekst_ou {
+	position: absolute;
+	font-family: Philosopher, sans-serif;
+	color: #CA9C2C;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 1vw;
+	margin-left: 50vw;
+}
+
+.inspiration_tekst {
+	margin-top: 5vw;
+}
+
+.insp_01 {
+	background-image: url(img/inspoplante1.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 5vw;
+}
+
+.insp_02 {
+	background-image: url(img/inspoplante2.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_03 {
+	background-image: url(img/inspoplante3.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_04 {
+	background-image: url(img/inspoplante4.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_05 {
+	background-image: url(img/inspoplante5.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_06 {
+	background-image: url(img/inspoplante6.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_07 {
+	background-image: url(img/inspoplante7.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_08 {
+	background-image: url(img/inspoplante8.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+.insp_09 {
+	background-image: url(img/inspoplante9.jpg);
+	background-size: cover;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+	background-position: 10% 60%;
+	margin-top: 8vw;
+}
+
+footer {
+	background-color: #4D7553;
+	height: auto;
+	padding: 10px;
+}
+
+footer p {
+	font-style: normal;
+	font-size: 0.8rem;
+	width: 100%;
+	padding: 2px;
+	margin: 5px;
+	text-align: left;
+}
+
+/*OM OS SIDE*/
+
+.logo_om {
+	width: 50vw;
+	display: grid;
+	margin: auto;
+	padding-top: 55px;
+}
+
+/* Adskilleren af teksten */
+#om_os_info .divider {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 1px;
+}
+
+#om_os_info .div-transparent:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 100%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+#om_os_info .div-dot:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: goldenrod;
+	border: 1px solid rgb(48, 49, 51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+		0 0 0 4px white;
+}
+
+.selected {
+	background-color: #3d573d;
+}
+
+
+.mission {
+	padding: 0 6vw 10vw 6vw;
+}
+
+@media (min-width: 600px) {
+
+
+	.tekst_ou {
+		font-size: 2.6rem;
+		padding-top: 5vw;
+		margin-left: 50vw;
+	}
+}
+
+@media (min-width: 800px) {
+
+	#forside_planter {
+		max-width: 100%;
+		margin: 0 auto;
+		grid-gap: 2vw;
+		margin: 20px;
+	}
+
+
+	#forside_planter div {
+		width: 100%;
+		height: 40vw;
+	}
+
+	#forside_planter h3 {
+		width: 30vw;
+		font-size: 3vw;
+		margin-top: 15vw;
+		z-index: 95;
+	}
+
+	.splash_02 {
+		margin: 30px 20px 10px 20px;
+	}
+
+	.tekst_ou {
+		font-size: 2.5rem;
+		padding-top: 8vw;
+		margin-left: 60vw;
+	}
+
+	p {
+		width: 1100px;
+	}
+
+
+	.logo {
+		width: 30vw;
+	}
+
+	.splash {
+		height: 25vw;
+	}
+
+	.logo img {
+		width: 20vw;
+	}
+
+	#burgercontainer {
+		display: none;
+	}
+
+	#myLinks {
+		display: flex;
+		background-color: transparent;
+		margin-top: 0;
+		height: auto;
+		justify-content: flex-end;
+		top: 0;
+	}
+
+
+	nav div:first-of-type {
+		display: none;
+	}
+
+	nav div:nth-of-type(2) {
+		display: none;
+	}
+
+	nav div:nth-of-type(3) {
+		display: none;
+	}
+
+	.active a:hover {
+		color: #CA9C2C;
+	}
+
+	/*  OM OS SIDE */
+
+	#om_os_section {
+		padding-top: 55px;
+		align-items: center;
+	}
+
+	#om_os_section img {
+		width: 18vw;
+	}
+
+	#om_os_section p {
+		max-width: 50vw;
+	}
+
+	.inspiration_tekst h3 {
+		font-size: 2vw;
+	}
+
+	#galleri_insp {
+		max-width: 90%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 0 auto;
+
+	}
+
+	.insp_01 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_02 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_03 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_04 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_05 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_06 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_07 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_08 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.insp_09 {
+		width: 19vw;
+		height: 19vw;
+		margin-top: 1vw;
+	}
+
+	.mission {
+		padding: 0 6vw 0vw 6vw;
+	}
+
+
+}
+
+/*Desktop version*/
+
+@media (min-width: 1280px) {
+	#forside_planter {
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr 1fr;
+
+	}
+
+	#forside_planter div {
+		width: 100%;
+		height: 20vw;
+	}
+
+	#forside_planter h3 {
+		width: 15vw;
+		font-size: 1.5vw;
+		margin-top: 0vw;
+		padding: 2vw;
+		margin-top: 7vw;
+		text-align: center;
+
+	}
+
+	#forside_planter div:hover img {
+		opacity: 100%;
+		max-width: 100%;
+	}
+
+	#forside_planter div:hover h3 {
+		color: #404E44;
+		border: #404E44 solid 2px;
+		background-color: white;
+	}
+
+	a:first-of-type {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.tekst_ou {
+		font-size: 5rem;
+		padding-top: 7vw;
+		margin-left: 45vw;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		left: 25vw;
+		top: 13vh;
+		max-width: 60vw;
+	}
+
+
+	.plante_01 img {
+		margin-top: -20vw;
+	}
+
+	.plante_02 img {
+		margin-top: -40vw;
+		width: 100vw;
+		height: 50vw;
+	}
+
+	.plante_03 img {
+		margin-top: -34vw;
+		width: 100vw;
+		height: 800px;
+	}
+
+
+}
+
+@media (min-width: 2400px) {
+
+	.tekst_ou {
+		left: 17vw;
+
+	}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+	<title>mamaFlora</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="single.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+	<header>
+		<div class="topnav">
+			<a href="index.html" class="logo_navn_menu"><img class="logo_menu" src="img/hvid_2.svg" alt="logo"></a>
+			<p id="mamaflora_menu">MamaFlora</p>
+			<nav id="myLinks" class="active">
+				<!-- Navigation links (hidden by default) -->
+				<a href="index.html">Forside</a>
+				<div></div>
+				<a href="multiview.html">Planter</a>
+				<div></div>
+				<a href="guide.html">Guide</a>
+				<div></div>
+				<a href="om.html">Om os</a>
+			</nav>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a class="icon">
+				<div id="burgercontainer">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</a>
+		</div>
+
+	</header>
+
+	<main>
+		<button class="tilbageknap">
+			Tilbage
+		</button>
+
+		<article>
+
+			<div class="row">
+				<div class="column" id="slideshow">
+					<div class="billede_slideshow">
+						<img class="img1" src="#" alt="">
+					</div>
+					<div class="billede_slideshow">
+						<img class="img2" src="#" alt="">
+					</div>
+					<div class="billede_slideshow">
+						<img class="img3" src="#" alt="">
+					</div>
+					<div class="skift_billede">
+						<button class="tilbage" onclick="plusSlides(-1)">❮</button>
+						<div>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+						<button class="frem" onclick="plusSlides(1)">❯</button>
+					</div>
+				</div>
+
+
+				<div class="column">
+					<h1 class="navn"></h1>
+					<h2 class="latin"></h2>
+					<div class="sol">
+						<img src="#" alt="">
+					</div>
+					<div class="vand">
+						<img src="#" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="divider div-transparent div-dot"></div>
+
+			<div class="pleje_egenskaber">
+				<div>
+					<h2>PLEJE</h2>
+					<p id="pleje"></p>
+				</div>
+				<div>
+					<h2>EGENSKABER</h2>
+					<p id="egenskaber"></p>
+				</div>
+			</div>
+			<a class="koebknap" href="" target="_blank">
+				<h2>Køb planten her</h2>
+			</a>
+
+		</article>
+
+
+	</main>
+	<footer>
+		<p>
+			© Some rights reserved 2021
+		</p>
+	</footer>
+	<script src="javascript.js"></script>
+	<script src="single.js"></script>
+</body>
+
+</html>

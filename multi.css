@@ -1,0 +1,275 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+button {
+	cursor: pointer;
+}
+
+h1 {
+	font-family: Philosopher, sans-serif;
+	color: #EAEBE6;
+	font-size: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-family: Philosopher, sans-serif;
+	color: #EAEBE6;
+	font-size: 1.8rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h3 {
+	font-family: Philosopher, sans-serif;
+	color: #EAEBE6;
+	font-size: 1.4rem;
+	margin-left: 1.5vw;
+	margin-right: auto;
+	text-align: left;
+	padding-bottom: 20px;
+}
+
+p {
+	font-family: Quattrocento, sans-serif;
+	color: #EAEBE6;
+	font-size: 1.3rem;
+	width: 1000px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+main {
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+
+}
+
+.filter {
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+	grid-gap: 1.5vw;
+	margin-bottom: 2vw;
+}
+
+.filter button {
+	border-radius: 25px;
+	padding: 10px;
+	width: 180px;
+	font-family: Quattrocento, sans-serif;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #EAEBE6;
+	background-color: #567356;
+	border: 0.5px solid rgb(234, 235, 230, 0.5);
+}
+
+li {
+	cursor: pointer;
+}
+
+.filter button:active {
+	color: #567356;
+	background-color: #C29D44;
+}
+
+#multi_planter {
+	display: grid;
+	grid-gap: 20px;
+}
+
+
+article {
+	width: 100%;
+}
+
+article img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	transition: transform .5s;
+	/*animation af zoom på hover*/
+
+}
+
+.article_billede {
+	overflow: hidden;
+	/*sørger for at billedet bliver i boks ved hover/zoom*/
+	cursor: pointer;
+}
+
+
+.knap_og_navn {
+	display: flex;
+	margin-top: 2vw;
+}
+
+
+article h3 {}
+
+article button {}
+
+/*knappen om detaljer*/
+.b {
+	float: right;
+	background-color: #567356;
+	padding: 10px;
+	color: #EAEBE6;
+	font-family: Quattrocento, sans-serif;
+	font-size: 0.9rem;
+	border-radius: 25px;
+	margin-right: 1.5vw;
+	width: 100px;
+	max-height: 40px;
+	position: relative;
+	bottom: 7vw;
+	font-weight: bold;
+	border: 0.5px solid rgb(234, 235, 230, 0.5);
+}
+
+.b:hover {
+	color: #EAEBE6;
+	background-color: #C29D44;
+}
+
+
+/*Dropdown filter skjult som udgangspunkt */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*Style indholdet af dropdown boxen*/
+.dropdown_content {
+	display: none;
+	position: absolute;
+	background-color: #9FB2AF;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	list-style-type: none;
+
+}
+
+/*Style af de linke*/
+.dropdown_content a {
+	float: none;
+	color: #EAEBE6;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+	font-family: Quattrocento, sans-serif;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.dropdown_content a:hover {
+	background-color: #C29D44;
+}
+
+.dropdown:hover .dropdown_content {
+	display: block;
+}
+
+footer {}
+
+
+.filter .valgt {
+	background-color: #CA9C2C;
+	color: #EAEBE6;
+}
+
+/*Gældende for tablet*/
+@media (min-width: 768px) {
+
+	main {
+		padding-top: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+	#multi_planter {
+
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.filter {
+		grid-gap: 1.5vw;
+	}
+
+	.filter button {
+		font-size: 0.9rem;
+
+	}
+
+	h3 {
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.knap_og_navn {
+		margin-top: 0.5vw;
+		align-items: center;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+	}
+
+	.b {
+		margin-right: 0;
+		bottom: 0;
+	}
+
+}
+
+/*Gældende for tablet horisontal */
+@media (min-width: 1024px) {
+	#multi_planter {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+}
+
+/*Gældende for desktop*/
+@media (min-width: 1280px) {
+
+	#multi_planter {
+
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+
+	.filter button:hover {
+		color: #EAEBE6;
+		background-color: #C29D44;
+	}
+
+	main {
+		margin: 0 auto;
+
+	}
+}

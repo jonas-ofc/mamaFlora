@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+	<title>mamaFlora</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="multi.css">
+	<!-- Favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+
+	<header>
+		<div class="topnav">
+			<a href="index.html" class="logo_navn_menu"><img class="logo_menu" src="img/hvid_2.svg" alt="logo"></a>
+			<p class="mamaflora_menu">MamaFlora</p>
+			<nav id="myLinks" class="active">
+				<!-- Navigation links (hidden by default) -->
+				<a href="index.html">Forside</a>
+				<div></div>
+				<a href="multiview.html" class="selected">Planter</a>
+				<div></div>
+				<a href="guide.html">Guide</a>
+				<div></div>
+				<a href="om.html">Om os</a>
+			</nav>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a class="icon">
+				<div id="burgercontainer">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</a>
+		</div>
+
+	</header>
+
+	<div class="splash">
+		<div class="logo">
+			<img src="img/hvid_2.svg" alt="">
+		</div>
+	</div>
+	<main>
+		<div class="filter">
+			<!--           Almindelige filterknapper-->
+			<button data-kategori="navn" class="valgt sorter">Alle</button>
+			<button data-kategori="spiselig" class="sorter">Spiselig</button>
+			<button data-kategori="blomster" class="sorter">Blomstrende</button>
+			<button data-kategori="luftrensende" class="sorter">Luftrensende</button>
+			<button data-kategori="form" class="sorter">Hængende</button>
+			<button data-kategori="grad" class="sorter">Nem</button>
+
+			<!--Dropdown filter knap vand-->
+			<div class="vand_filter dropdown">
+				<button class="vand_filter_knap" data-kategori="vand">Vand ↓</button>
+				<div class="dropdown_content">
+					<a class="sorter" data-kategori="lidt_vand">Lidt</a>
+					<a class="sorter" data-kategori="moderat_vand">Moderat</a>
+					<a class="sorter" data-kategori="meget_vand">Meget </a>
+				</div>
+			</div>
+
+			<!--Dropdown filter knap sol-->
+			<div class="sol_filter dropdown">
+				<button class="sol_filter_knap" data-kategori="sol">Sol ↓</button>
+				<div class="dropdown_content">
+					<a class="sorter" data-kategori="lidt_sol">Skygge</a>
+					<a class="sorter" data-kategori="moderat_sol">Indirekte</a>
+					<a class="sorter" data-kategori="meget_sol">Direkte </a>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="overskrift_filter">Alle</h2>
+		<section id="multi_planter">
+		</section>
+
+		<!--       Opretter template skabelon til at hente data ned i -->
+		<template>
+			<article>
+				<div class="article_billede">
+					<img class="" src="" alt="">
+				</div>
+				<div class="knap_og_navn">
+					<h3 class=""></h3>
+					<button class="b">Se detaljer</button>
+				</div>
+			</article>
+		</template>
+	</main>
+	<footer>
+		<p>
+			© Some rights reserved 2021
+		</p>
+	</footer>
+
+	<script src="javascript.js"></script>
+	<script src="multi.js"></script>
+</body>
+
+</html>
